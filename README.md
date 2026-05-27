@@ -47,9 +47,4 @@ libreoffice --headless --convert-to pdf report.docx
 - Logistic Regression: ROC-AUC 0.746, PR-AUC 0.497.
 - Two-cluster K-Means partition with 29.1% vs 14.2% observed default rates, confirmed by Ward hierarchical at 29.8% vs 14.1% (90.5% assignment agreement).
 - Top predictors are all repayment-history summaries (PAY_0, max_pay_status, n_months_late). Demographics barely contribute.
-
-## Before final submission, check
-
-- Cover-page metadata (coordinator name, tutor name, tutorial group) is currently blank. Fill in if the unit requires it.
-- Referencing style is UOW Harvard, taken from the UOW Library guide. Confirm it matches what the unit expects.
-- The submission date on the cover page is whatever day `build_report.py` was last run. Re-run on submission day so the date is correct.
+- 
