@@ -38,7 +38,7 @@ Neither is a hard bug, they're just settings to flip if we ever want to revive t
 
 ## Suggested approach for the group submission
 
-- Use this repo as the submitted artefact (report.pdf goes in, code optional as a supplementary file).
+- Using this repo as the submitted artefact (report.pdf goes in, code optional as a supplementary file).
 - Keep Aiden's `.ows` workflow as a supplementary appendix file. It's good evidence that the team explored Orange too, and the contribution log can point at it.
 - One sentence in the methods section of the report could acknowledge that the team prototyped in Orange before moving to Python. Easy to add if anyone wants to.
 
