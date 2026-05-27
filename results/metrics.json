@@ -1,0 +1,193 @@
+{
+  "data": {
+    "n_rows": 30000,
+    "n_cols": 34,
+    "default_rate": 0.2212,
+    "edu_after_recode": {
+      "2": 14030,
+      "1": 10585,
+      "3": 4917,
+      "4": 468
+    },
+    "marriage_after_recode": {
+      "2": 15964,
+      "1": 13659,
+      "3": 377
+    }
+  },
+  "classification": {
+    "cv_roc_auc": {
+      "logistic_regression_mean": 0.76,
+      "logistic_regression_std": 0.0067,
+      "random_forest_mean": 0.7859,
+      "random_forest_std": 0.0049
+    },
+    "logistic_regression": {
+      "roc_auc": 0.7464,
+      "pr_auc": 0.4969,
+      "f1_at_0.5": 0.5088,
+      "accuracy": 0.7438,
+      "precision_default": 0.4417,
+      "recall_default": 0.5998,
+      "f1_default": 0.5088,
+      "confusion_matrix": [
+        [
+          3667,
+          1006
+        ],
+        [
+          531,
+          796
+        ]
+      ]
+    },
+    "random_forest": {
+      "roc_auc": 0.7788,
+      "pr_auc": 0.5568,
+      "f1_at_0.5": 0.5382,
+      "accuracy": 0.7723,
+      "precision_default": 0.488,
+      "recall_default": 0.5998,
+      "f1_default": 0.5382,
+      "confusion_matrix": [
+        [
+          3838,
+          835
+        ],
+        [
+          531,
+          796
+        ]
+      ]
+    },
+    "top_feature_importances": {
+      "PAY_0": 0.1115,
+      "max_pay_status": 0.1095,
+      "n_months_late": 0.1081,
+      "mean_pay_status": 0.078,
+      "PAY_2": 0.0436,
+      "max_utilisation": 0.0348,
+      "total_paid_6m": 0.0331,
+      "mean_utilisation": 0.0296,
+      "PAY_3": 0.0283,
+      "payment_to_bill": 0.0279,
+      "LIMIT_BAL": 0.0277,
+      "total_bill_6m": 0.0268,
+      "PAY_AMT1": 0.0249,
+      "BILL_AMT1": 0.0244,
+      "PAY_AMT2": 0.0242
+    },
+    "lr_top_positive_coefs": {
+      "n_months_late": 0.8304,
+      "max_pay_status": 0.3097,
+      "mean_utilisation": 0.198,
+      "PAY_0": 0.1773,
+      "BILL_AMT2": 0.1289,
+      "BILL_AMT3": 0.0797,
+      "AGE": 0.0403,
+      "EDUCATION_2": 0.0353
+    },
+    "lr_top_negative_coefs": {
+      "EDUCATION_4": -0.929,
+      "LIMIT_BAL": -0.2259,
+      "SEX_2": -0.1493,
+      "MARRIAGE_2": -0.1472,
+      "PAY_6": -0.1323,
+      "PAY_3": -0.1209,
+      "PAY_AMT1": -0.1205,
+      "PAY_2": -0.1173
+    },
+    "rf_best_f1_threshold": {
+      "threshold": 0.6,
+      "precision": 0.5649,
+      "recall": 0.5283,
+      "f1": 0.546
+    }
+  },
+  "clustering": {
+    "kmeans_selection": {
+      "ks": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "inertias": [
+        59364.5,
+        50261.2,
+        44059.6,
+        38854.0,
+        35569.6,
+        33154.7,
+        30509.4
+      ],
+      "silhouettes": [
+        0.2379,
+        0.2377,
+        0.2342,
+        0.2368,
+        0.1944,
+        0.1892,
+        0.2008
+      ],
+      "selected_k": 2
+    },
+    "kmeans_profiles": [
+      {
+        "kmeans_cluster": 0,
+        "LIMIT_BAL": 115238.02,
+        "AGE": 35.02,
+        "mean_pay_status": 0.43,
+        "max_pay_status": 1.05,
+        "n_months_late": 1.38,
+        "mean_utilisation": 0.63,
+        "payment_to_bill": 0.08,
+        "total_bill_6m": 422463.55,
+        "total_paid_6m": 26424.96,
+        "default": 0.29,
+        "size": 15964,
+        "default_rate": 0.2908
+      },
+      {
+        "kmeans_cluster": 1,
+        "LIMIT_BAL": 226907.24,
+        "AGE": 36.01,
+        "mean_pay_status": -0.88,
+        "max_pay_status": -0.26,
+        "n_months_late": 0.22,
+        "mean_utilisation": 0.08,
+        "payment_to_bill": 0.69,
+        "total_bill_6m": 96298.23,
+        "total_paid_6m": 37595.74,
+        "default": 0.14,
+        "size": 14036,
+        "default_rate": 0.142
+      }
+    ],
+    "hierarchical": {
+      "k": 2,
+      "sample_size": 4000,
+      "default_rate_by_cluster": {
+        "1": 0.1414,
+        "2": 0.2983
+      },
+      "cluster_sizes": {
+        "1": 1938,
+        "2": 2062
+      }
+    },
+    "hier_vs_kmeans_contingency": {
+      "1": {
+        "0": 211,
+        "1": 1727
+      },
+      "2": {
+        "0": 1893,
+        "1": 169
+      }
+    }
+  }
+}
